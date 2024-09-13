@@ -1,0 +1,26 @@
+tag: paper-mqttset-eval
+dataset_name: mqttset
+dataset_folder: datasets
+dataset_save: true
+dataset_load_if_exists: true
+model_name: prototype_model
+model_folder: models
+optimizer: adam
+loss: focal
+pretrained: ""
+distance_metric: cosine
+epochs: 750
+batch_size: 1024
+learning_rate: 0.001
+ppi_reprezentation_size: 4
+flowstats_reprezentation_size: 4
+processed_reprezentation_size: 8
+prototypes: 10
+extra_layer: false
+extra_layer_size: 64
+prototype_dropout: 0.5
+flowstats_dropout: 0.2
+ppi_dropout: 0.2
+prototype_hidden_size: 32
+
+

@@ -1,0 +1,321 @@
+{
+    "tag": {
+      "desc": null,
+      "value": "paper-edge-eval"
+    },
+    "loss": {
+      "desc": null,
+      "value": "focal"
+    },
+    "_wandb": {
+      "desc": null,
+      "value": {
+        "m": [
+          {
+            "1": "dst_model/epoch",
+            "6": [
+              3
+            ]
+          },
+          {
+            "1": "dst_model/accuracy",
+            "5": 1,
+            "6": [
+              1
+            ]
+          },
+          {
+            "1": "dst_model/f1_score",
+            "5": 1,
+            "6": [
+              1
+            ]
+          },
+          {
+            "1": "dst_model/loss",
+            "5": 1,
+            "6": [
+              1
+            ]
+          },
+          {
+            "1": "dst_model/val_accuracy",
+            "5": 1,
+            "6": [
+              1
+            ]
+          },
+          {
+            "1": "dst_model/val_f1_score",
+            "5": 1,
+            "6": [
+              1
+            ]
+          },
+          {
+            "1": "dst_model/val_loss",
+            "5": 1,
+            "6": [
+              1
+            ]
+          }
+        ],
+        "t": {
+          "1": [
+            2,
+            3,
+            5,
+            50,
+            53,
+            55
+          ],
+          "2": [
+            2,
+            3,
+            5,
+            50,
+            53,
+            55
+          ],
+          "3": [
+            2,
+            7,
+            16,
+            23,
+            37,
+            38,
+            61
+          ],
+          "4": "3.10.4",
+          "5": "0.17.4",
+          "8": [
+            5
+          ],
+          "13": "linux-x86_64"
+        },
+        "framework": "keras",
+        "visualize": {
+          "metrics-dst_model_pignistic/cm": {
+            "panel_type": "Vega2",
+            "panel_config": {
+              "transform": {
+                "name": "tableWithLeafColNames"
+              },
+              "userQuery": {
+                "queryFields": [
+                  {
+                    "args": [
+                      {
+                        "name": "runSets",
+                        "value": "${runSets}"
+                      }
+                    ],
+                    "name": "runSets",
+                    "fields": [
+                      {
+                        "name": "id",
+                        "fields": []
+                      },
+                      {
+                        "name": "name",
+                        "fields": []
+                      },
+                      {
+                        "name": "_defaultColorIndex",
+                        "fields": []
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "tableKey",
+                            "value": "metrics-dst_model_pignistic/cm_table"
+                          }
+                        ],
+                        "name": "summaryTable",
+                        "fields": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              "panelDefId": "wandb/confusion_matrix/v1",
+              "fieldSettings": {
+                "Actual": "Actual",
+                "Predicted": "Predicted",
+                "nPredictions": "nPredictions"
+              },
+              "stringSettings": {
+                "title": ""
+              }
+            }
+          },
+          "metrics-dst_model_pignistic/malicious-cm": {
+            "panel_type": "Vega2",
+            "panel_config": {
+              "transform": {
+                "name": "tableWithLeafColNames"
+              },
+              "userQuery": {
+                "queryFields": [
+                  {
+                    "args": [
+                      {
+                        "name": "runSets",
+                        "value": "${runSets}"
+                      }
+                    ],
+                    "name": "runSets",
+                    "fields": [
+                      {
+                        "name": "id",
+                        "fields": []
+                      },
+                      {
+                        "name": "name",
+                        "fields": []
+                      },
+                      {
+                        "name": "_defaultColorIndex",
+                        "fields": []
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "tableKey",
+                            "value": "metrics-dst_model_pignistic/malicious-cm_table"
+                          }
+                        ],
+                        "name": "summaryTable",
+                        "fields": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              "panelDefId": "wandb/confusion_matrix/v1",
+              "fieldSettings": {
+                "Actual": "Actual",
+                "Predicted": "Predicted",
+                "nPredictions": "nPredictions"
+              },
+              "stringSettings": {
+                "title": ""
+              }
+            }
+          }
+        },
+        "start_time": 1722480707,
+        "cli_version": "0.17.4",
+        "is_jupyter_run": false,
+        "python_version": "3.10.4",
+        "is_kaggle_kernel": false
+      }
+    },
+    "epochs": {
+      "desc": null,
+      "value": 750
+    },
+    "optimizer": {
+      "desc": null,
+      "value": "adam"
+    },
+    "batch_size": {
+      "desc": null,
+      "value": 124197
+    },
+    "model_name": {
+      "desc": null,
+      "value": "prototype_model"
+    },
+    "pretrained": {
+      "desc": null,
+      "value": ""
+    },
+    "prototypes": {
+      "desc": null,
+      "value": 23
+    },
+    "class_count": {
+      "desc": null,
+      "value": 6
+    },
+    "extra_layer": {
+      "desc": null,
+      "value": false
+    },
+    "label_names": {
+      "desc": null,
+      "value": [
+        "dos",
+        "benign",
+        "malware",
+        "injection",
+        "scanning",
+        "mitm"
+      ]
+    },
+    "ppi_dropout": {
+      "desc": null,
+      "value": 0.472447071640312
+    },
+    "dataset_name": {
+      "desc": null,
+      "value": "iot-edge"
+    },
+    "dataset_save": {
+      "desc": null,
+      "value": true
+    },
+    "model_folder": {
+      "desc": null,
+      "value": "models"
+    },
+    "learning_rate": {
+      "desc": null,
+      "value": 0.0003542890444419609
+    },
+    "dataset_folder": {
+      "desc": null,
+      "value": "datasets"
+    },
+    "distance_metric": {
+      "desc": null,
+      "value": "cosine"
+    },
+    "extra_layer_size": {
+      "desc": null,
+      "value": 123
+    },
+    "flowstats_dropout": {
+      "desc": null,
+      "value": 0.51664030365493
+    },
+    "prototype_dropout": {
+      "desc": null,
+      "value": 0.7486653408729925
+    },
+    "experiment_nickname": {
+      "desc": null,
+      "value": "happy-sweep-91.1722480707.835622"
+    },
+    "prototype_hidden_size": {
+      "desc": null,
+      "value": 95
+    },
+    "dataset_load_if_exists": {
+      "desc": null,
+      "value": true
+    },
+    "ppi_reprezentation_size": {
+      "desc": null,
+      "value": 46
+    },
+    "flowstats_reprezentation_size": {
+      "desc": null,
+      "value": 8
+    },
+    "processed_reprezentation_size": {
+      "desc": null,
+      "value": 20
+    }
+  }
