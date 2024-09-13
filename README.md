@@ -1,5 +1,7 @@
 # Evidential classifier: MQTT Case
 
+![logo.webp](logo.webp)
+
 
 ## Datasets
 For creating datasets, we used [`ipfixprobe`](https://github.com/CESNET/ipfixprobe) exporter with conjunction with  [Nemea framework](https://github.com/cesnet/nemea), using following commands:
